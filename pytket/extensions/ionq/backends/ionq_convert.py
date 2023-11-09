@@ -15,7 +15,7 @@
 from typing import Dict, Tuple, Any, List
 from numpy import pi
 from pytket.passes import RebaseCustom  # type: ignore
-from pytket._tket.circuit._library import _TK1_to_RzRx  # type: ignore
+from pytket.circuit_library import TK1_to_RzRx  # type: ignore
 from pytket.circuit import Circuit, OpType, Command  # type: ignore
 
 
@@ -51,7 +51,7 @@ ionq_gates = ionq_multiqs.union(ionq_singleqs)
 ionq_rebase_pass = RebaseCustom(
     ionq_multiqs | ionq_singleqs,
     Circuit(),  # cx_replacement (irrelevant)
-    _TK1_to_RzRx,
+    TK1_to_RzRx,
 )  # tk1_replacement
 
 ionq_gate_dict = {

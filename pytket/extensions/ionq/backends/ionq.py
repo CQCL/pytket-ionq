@@ -37,7 +37,7 @@ from pytket.passes import (  # type: ignore
     RenameQubitsPass,
     SimplifyInitial,
 )
-from pytket._tket.circuit._library import _TK1_to_RzRx  # type: ignore
+from pytket.circuit_library import TK1_to_RzRx  # type: ignore
 from pytket.predicates import (  # type: ignore
     GateSetPredicate,
     MaxNQubitsPredicate,
@@ -215,7 +215,7 @@ class IonQBackend(Backend):
                     self.rebase_pass(),
                     SquashCustom(
                         ionq_singleqs,
-                        _TK1_to_RzRx,
+                        TK1_to_RzRx,
                     ),
                     SimplifyInitial(allow_classical=False, create_all_qubits=True),
                 ]
