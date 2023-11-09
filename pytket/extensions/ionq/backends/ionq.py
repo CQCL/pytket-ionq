@@ -37,7 +37,7 @@ from pytket.passes import (  # type: ignore
     RenameQubitsPass,
     SimplifyInitial,
 )
-from pytket._tket.circuit._library import TK1_to_RzRx  # type: ignore
+from pytket.circuit_library import TK1_to_RzRx  # type: ignore
 from pytket.predicates import (  # type: ignore
     GateSetPredicate,
     MaxNQubitsPredicate,
