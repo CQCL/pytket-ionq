@@ -15,7 +15,7 @@
 from typing import Dict, Tuple, Any, List
 from numpy import pi
 from pytket.passes import RebaseCustom  # type: ignore
-from pytket._tket.circuit._library import TK1_to_RzRx  # type: ignore
+from pytket.circuit_library import TK1_to_RzRx  # type: ignore
 from pytket.circuit import Circuit, OpType, Command  # type: ignore
 
 
