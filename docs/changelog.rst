@@ -1,8 +1,8 @@
 Changelog
 ~~~~~~~~~
 
-0.24.0 (November 2023)
-----------------------
+0.24.0 (unreleased)
+-------------------
 
 * Updated pytket version requirement to 1.22.
 
