@@ -1,5 +1,7 @@
 # pytket-ionq
 
+This extension is currently not working and we don't expect it to be available again in the near future. 
+
 [Pytket](https://tket.quantinuum.com/api-docs/index.html) is a python module for interfacing
 with tket, a quantum computing toolkit and optimising compiler developed by Quantinuum.
 
